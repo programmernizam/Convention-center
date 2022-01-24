@@ -9,9 +9,13 @@ body{
 }
 /* ===Reusable Style */
 a{
+    text-decoration: none;
     font-weight: 500;
 }
 /* Banner */
+.banner-info h5{
+    font-size: 48px;
+}
 .card-btn{
     background: #ffffff;
     color: #3F87F5;
@@ -39,16 +43,19 @@ a{
     color: #ffffff;
 }
 .fa-check{
-    font-size: 14px;
+    font-size: 12px;
     background: rgba(82, 67, 194, 0.10);
     color: #5243C2;
     padding: 5px;
     margin-right: 5px;
 }
+.list-text{
+    font-size: 12px;
+}
 .price-btn{
     background: rgba(244, 150, 210, 0.315);
     color: #3F87F5;
-    padding: 12px 60px;
+    padding: 12px 40px;
     margin-top: 10px;
 }
 .price-btn:hover{
@@ -64,4 +71,30 @@ a{
     background-color: #ffffff00;
     border: none;
     box-shadow: none;
+}
+
+/* Responsive */
+
+@media (max-width:959px) {
+    .banner-info h5{
+        font-size: 30px;
+    }
+    .banner-info p{
+        font-size: 10px;
+        line-height: 14px;
+    }
+}
+@media (max-width:767px) {
+    .banner-info h5{
+        font-size: 16px;
+    }
+    .banner-info p{
+        font-size: 5px;
+        line-height: 0px;
+    }
+    .card-btn{
+        font-size: 8px;
+        font-weight: 500;
+        padding: 5px 10px;
+    }
 }
